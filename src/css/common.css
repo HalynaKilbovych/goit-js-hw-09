@@ -11,6 +11,11 @@ body {
   color: #212121;
   line-height: 1.5;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   
 }
 
@@ -19,15 +24,44 @@ img {
   max-width: 100%;
 }
 
-button { 
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  text-align: center;
-  padding: 20px;
-  font-size: 2em;
-  border: ;
+p, ul { 
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
 }
 
+button { 
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 2em;
+  border: 1px solid grey; 
+  border-radius: 2px;
+}
+button:hover, 
+button:active,
+button:focus{ 
+  background-color: blueviolet;
+}
 
+input { 
+  padding: 15px;
+}
+.timer { 
+  width: 100vw;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
 
+.field { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.value { 
+  font-size: large;
+  font-weight: 700;
+}
