@@ -33,14 +33,14 @@ function onMakePromise(e){
     return;
   }
   for (let i = 1; i <= amount.value; i += 1) {
-    createPromise(i, stepValue)
+    createPromise(i, delayValue)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise #${position} in ${delay}ms`);
       })
       .catch(({ position, delay }) => {
         Notify.failure(`❌ Rejected promise #${position} in ${delay}ms`);
       });
-    stepValue += Number(step.value);
+      delayValue += Number(step.value);
   }
   e.currentTarget.reset();
 }
