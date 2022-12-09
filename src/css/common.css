@@ -65,3 +65,16 @@ input {
   font-size: large;
   font-weight: 700;
 }
+
+form { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+form label { 
+  width: calc((100% - 60px) / 3);
+}
